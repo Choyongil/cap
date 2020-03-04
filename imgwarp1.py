@@ -73,6 +73,7 @@ print('pts2 : ',pts2)
 
 M = cv2.getPerspectiveTransform(pts1,pts2)      # pts1의 좌표를 pts2의 좌표로 변환 시킬 변수 M 설정
 a = 1
+b = 2
 
 img_result = cv2.warpPerspective(img_original, M, (width,height))      # 이미지 와핑
 img_result2 = img_original2
